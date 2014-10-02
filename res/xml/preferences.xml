@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"  >
+    
+    <EditTextPreference
+	    android:key="username"
+        android:title="Username"
+        android:summary="Define the Username you would like to use"
+        android:dialogTitle="Username"
+        android:dialogMessage="Provide a Username"   
+        android:defaultValue="@string/default_username"    />
+    
+    <EditTextPreference
+        android:key="ip_address"
+        android:title="IP Address"
+        android:summary="Define the Server IP address"
+        android:dialogTitle="IP Address"
+        android:dialogMessage="Provide an IP Address"   
+        android:defaultValue="@string/default_ip_address" />
+            
+            
+    <EditTextPreference
+        android:key="port"
+        android:title="Port"
+        android:summary="Define the Server Port number"
+        android:dialogTitle="Port"
+        android:dialogMessage="Provide a Port number"   
+        android:defaultValue="@string/default_port" />
+    
+    <PreferenceCategory
+    	android:title="@string/steps_settings_title">            
+         
+    <!--
+         
+    <ListPreference
+    	android:key="sensitivity"
+        android:title="@string/sensitivity_setting"
+        android:summary="@string/sensitivity_setting_details"
+        android:entries="@array/sensitivity_preference"
+        android:entryValues="@array/sensitivity_preference_values"
+        android:dialogTitle="@string/sensitivity_setting_title"
+        android:defaultValue="30" />
+    -->
+ 
+    <ListPreference
+        android:key="operation_level"
+        android:title="@string/operation_level_setting"
+        android:summary="@string/operation_level_setting_details"
+        android:entries="@array/operation_level_preference"
+        android:entryValues="@array/operation_level_preference_values"
+        android:dialogTitle="@string/operation_level_setting_title"
+        android:defaultValue="30" />
+    
+  	<ListPreference
+        android:key="units"
+        android:title="@string/units_setting"
+        android:summary="@string/units_setting_details"
+        android:entries="@array/units_preference"
+        android:entryValues="@array/units_preference_values"
+        android:dialogTitle="@string/units_setting_title"
+        android:defaultValue="imperial" />
+ 
+  	<EditTextPreference
+        android:key="step_length"
+        android:title="@string/step_length_setting"
+        android:summary="@string/step_length_setting_details"
+        android:dialogTitle="@string/step_length_setting_title"
+        android:defaultValue="20" />
+ 
+    </PreferenceCategory>
+</PreferenceScreen>

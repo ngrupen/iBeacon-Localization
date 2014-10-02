@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+    <!-- Settings, should always be in the overflow -->
+    <item android:id="@+id/action_settings"
+          android:title="@string/action_settings"
+          android:showAsAction="never" />
+    
+    <item android:id="@+id/lab_view"
+          android:title="@string/lab_view"
+          android:icon="@drawable/ic_action_location_map"
+          android:showAsAction="ifRoom" />
+    
+    <item android:id="@+id/reset"
+          android:title="@string/reset"
+          android:showAsAction="never" />
+    
+   	<item android:id="@+id/resume"
+         android:title="@string/resume"
+         android:showAsAction="never" />
+        
+   	<item android:id="@+id/pause"
+         android:title="@string/pause"
+         android:showAsAction="never" />
+    
+    <item android:id="@+id/quit"
+          android:title="@string/quit"
+          android:showAsAction="never" />
+
+</menu>

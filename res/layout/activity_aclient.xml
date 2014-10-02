@@ -1,0 +1,329 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_android"
+    android:orientation="vertical"
+    tools:context="com.example.aclient.AClientActivity"
+    tools:ignore="MergeRootFrame" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <EditText
+            android:id="@+id/msgBox"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="@string/message_prompt"
+            android:onClick="onClick"
+            android:shadowColor="@color/Plum"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="0.50"
+            android:textColor="@color/Plum"
+            android:textStyle="italic" />
+
+        <Button
+            android:id="@+id/sendMsg"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/cool_button"
+            android:onClick="onClick"
+            android:text="@string/send"
+            android:textColor="@color/WhiteSmoke"
+            android:typeface="serif" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:shadowColor="@color/Silver"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="0.01"
+        android:text="@string/initial_prompt"
+        android:textColor="@color/WhiteSmoke"
+        android:textColorLink="@color/White"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/getMsg"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/getMsg"
+        android:shadowColor="@color/WhiteSmoke"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="0.01"
+        android:textColorLink="@color/Tan"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        
+    	<ToggleButton
+    	    android:id="@+id/train"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:onClick="onClick"
+    	    android:textOff="@string/train"
+    	    android:textOn="@string/train" />
+
+        <RadioGroup
+            android:id="@+id/radio_button_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"  >
+
+            <RadioButton
+                android:id="@+id/radio_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.00"
+                android:enabled="false"
+                android:text="@string/one"
+                android:textColor="@color/WhiteSmoke"
+                android:onClick="onRadioButtonClicked" />
+
+            <RadioButton
+                android:id="@+id/radio_two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.00"
+                android:enabled="false"
+                android:text="@string/two"
+                android:textColor="@color/WhiteSmoke"
+                android:onClick="onRadioButtonClicked" />
+
+            <RadioButton
+                android:id="@+id/radio_three"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.00"
+                android:enabled="false"
+                android:text="@string/three"
+                android:textColor="@color/WhiteSmoke"
+                android:onClick="onRadioButtonClicked" />
+
+            <RadioButton
+                android:id="@+id/radio_four"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:enabled="false"
+                android:text="@string/four"
+                android:textColor="@color/WhiteSmoke"
+                android:onClick="onRadioButtonClicked" />
+        </RadioGroup>
+    </LinearLayout>
+    
+    <TextView
+    	android:id="@+id/zone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/zone"
+        android:textColor="@color/White"
+        android:visibility="visible"  />
+    
+    <LinearLayout    
+        android:id="@+id/linearLayout4"
+        android:orientation="vertical"
+        android:gravity="bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        
+    	<ImageButton
+        	android:id="@+id/show_popup_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:background="@drawable/open"
+            android:contentDescription="@string/show_button"
+            />
+    	
+    	<com.example.aclient.SlidingPanel
+            android:id="@+id/popup_window"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="left"
+            android:padding="1px"
+            android:background="@drawable/white">
+            
+    		<LinearLayout
+            	android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/cool_button2">
+ 
+            <TextView
+                android:id="@+id/sensor_info"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:text="@string/sensor_info"
+                android:layout_gravity="center"
+                android:textColor="@drawable/black"
+                android:layout_weight="1"
+                android:layout_marginLeft="5dp"
+                />
+ 
+            <ImageButton 
+                android:id="@+id/hide_popup_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:layout_gravity="center"
+                android:background="@drawable/close"
+                android:contentDescription="@string/show_button"/>
+ 
+        	</LinearLayout>
+            
+    	    <LinearLayout 
+    			android:orientation="vertical"
+    			android:layout_width="fill_parent"
+    			android:layout_height="fill_parent"
+    			android:padding="@dimen/margin"
+    			android:background="@color/screen_background" >
+
+    			<LinearLayout android:id="@+id/row_1"
+        			android:baselineAligned="false"
+        			android:orientation="horizontal"
+        			android:layout_width="fill_parent"
+        			android:layout_height="wrap_content"
+        			android:paddingBottom="@dimen/row_spacing">
+     
+        			<LinearLayout android:id="@+id/box_steps"
+            			android:orientation="vertical"
+            			android:layout_width="fill_parent"
+            			android:layout_height="wrap_content"
+            			android:gravity="center_horizontal"
+            			android:paddingRight="@dimen/margin"
+            			android:layout_weight="1">
+         
+            			<TextView android:id="@+id/step_value"
+                			android:textSize="@dimen/value"
+                			android:layout_width="fill_parent"
+                			android:layout_height="wrap_content"
+                			android:gravity="center_horizontal"
+                			android:background="@color/display_background"
+                			android:paddingLeft="@dimen/padding"
+                			android:paddingRight="@dimen/padding"
+                			android:paddingTop="@dimen/padding"
+                			android:textColor="@color/WhiteSmoke"
+                			android:text=""/>
+             
+            			<TextView android:id="@+id/step_units"
+                			android:gravity="center_horizontal"
+                			android:layout_width="fill_parent"
+                			android:layout_height="wrap_content"
+                			android:textSize="@dimen/units"
+                			android:text="@string/steps"
+                			android:background="@color/display_background"
+                			android:paddingBottom="@dimen/padding"
+                			android:textColor="@color/WhiteSmoke"/>
+ 
+        			</LinearLayout>
+ 
+        			<LinearLayout android:id="@+id/box_angle"
+            			android:orientation="vertical"
+            			android:layout_width="fill_parent"
+            			android:layout_height="wrap_content"
+            			android:gravity="center_horizontal"
+            			android:paddingRight="@dimen/margin"
+            			android:layout_weight="1">
+         
+            			<TextView android:id="@+id/angle_value"
+                			android:textSize="@dimen/value"
+                			android:layout_width="fill_parent"
+                			android:layout_height="wrap_content"
+                			android:gravity="center_horizontal"
+                			android:background="@color/display_background"
+                			android:paddingLeft="@dimen/padding"
+                			android:paddingRight="@dimen/padding"
+                			android:paddingTop="@dimen/padding"
+                			android:textColor="@color/WhiteSmoke"
+                			android:text=""/>
+             
+            			<TextView android:id="@+id/angle_units"
+                			android:gravity="center_horizontal"
+                			android:layout_width="fill_parent"
+                			android:layout_height="wrap_content"
+                			android:textSize="@dimen/units"
+                			android:text="@string/angle"
+                			android:background="@color/display_background"
+                			android:paddingBottom="@dimen/padding"
+                			android:textColor="@color/WhiteSmoke"/>
+ 
+        			</LinearLayout>
+ 
+    			</LinearLayout>
+ 
+        		<LinearLayout android:id="@+id/row_2"
+        			android:baselineAligned="false"
+        			android:orientation="horizontal"
+        			android:layout_width="fill_parent"
+        			android:layout_height="wrap_content"
+        			android:paddingBottom="@dimen/row_spacing">
+ 
+        			<LinearLayout android:id="@+id/box_orientation"
+            			android:orientation="vertical"
+            			android:layout_width="0dp"
+            			android:layout_height="wrap_content"
+            			android:gravity="center_horizontal"
+            			android:paddingRight="@dimen/margin"
+            			android:layout_weight="1">
+         
+            			<TextView android:id="@+id/orientation"
+                			android:textSize="@dimen/value"
+                			android:layout_width="fill_parent"
+                			android:layout_height="wrap_content"
+                			android:gravity="center_horizontal"
+                			android:background="@color/display_background"
+                			android:paddingLeft="@dimen/padding"
+                			android:paddingRight="@dimen/padding"
+                			android:paddingTop="@dimen/padding"
+                			android:textColor="@color/WhiteSmoke"
+                			android:text=""/>
+             
+            			<TextView android:id="@+id/orientation_text"
+                			android:gravity="center_horizontal"
+                			android:layout_width="fill_parent"
+                			android:layout_height="wrap_content"
+                			android:textSize="@dimen/units"
+                			android:text="@string/estimated_orientation"
+                			android:background="@color/display_background"
+                			android:paddingBottom="@dimen/padding"
+                			android:textColor="@color/WhiteSmoke"/>
+ 
+        			</LinearLayout>
+ 
+    			</LinearLayout>
+ 
+    			<LinearLayout
+        			android:id="@+id/canvas_row"
+        			android:layout_width="fill_parent"
+	    			android:layout_height="0dp"
+        			android:layout_weight="1.79"
+        			android:gravity="center_horizontal"
+        			android:orientation="horizontal"
+        			android:paddingTop="@dimen/row_spacing" >
+     
+        		<!-- Line Plot goes here -->
+    
+ 
+    			</LinearLayout>
+    		</LinearLayout>
+		</com.example.aclient.SlidingPanel>           
+    </LinearLayout>
+</LinearLayout>

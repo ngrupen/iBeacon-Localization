@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <color name="LightSteelBlue">#B0C4DE</color>
+    <color name="PowderBlue">#B0E0E6</color>
+    <color name="MediumSlateBlue">#7B68EE</color>
+    <color name="CadetBlue">#5F9EA0</color>
+    <color name="CornFlowerBlue">#6495ED</color>
+    <color name="DarkSlateBlue">#483D8B</color>
+    <color name="SteelBlue">#4682B4</color>
+    <color name="RoyalBlue">#4169E1</color>
+    <color name="DodgerBlue">#1E90FF</color>
+    <color name="MidnightBlue">#191970</color>
+    <color name="DeepSkyBlue">#00BFFF</color>
+    <color name="Blue">#0000FF</color>
+    <color name="MediumBlue">#0000CD</color>
+    <color name="DarkBlue">#00008B</color>
+    <color name="SkyBlue">#87CEEB</color>
+    <color name="SlateGray">#708090</color>
+    <color name="DarkSlateGray">#2F4F4F</color>
+    <color name="Gray">#808080</color>
+    <color name="DarkGray">#A9A9A9</color>
+    <color name="LightGrey">#D3D3D3</color>
+    <color name="DarkKhaki">#BDB76B</color>
+    <color name="Tan">#D2B48C</color>
+    <color name="Khaki">#F0E68C</color>
+    <color name="WhiteSmoke">#F5F5F5</color>
+    <color name="AntiqueWhite">#FAEBD7</color>
+    <color name="Silver">#C0C0C0</color>
+    <color name="BlanchedAlmond">#FFEBCD</color>
+    <color name="White">#FFFFFF</color>
+    <color name="LavenderBlush">#FFF0F5</color>
+    <color name="OldLace">#FDF5E6</color>
+    <color name="LightCoral">#F08080</color>
+	<color name="PaleGoldenrod">#EEE8AA</color>
+ 	<color name="Violet">#EE82EE</color>
+ 	<color name="DarkSalmon">#E9967A</color>
+ 	<color name="Lavender">#E6E6FA</color>
+ 	<color name="LightCyan">#E0FFFF</color>
+ 	<color name="BurlyWood">#DEB887</color>
+ 	<color name="Plum">#DDA0DD</color>
+ 	<color name="Gainsboro">#DCDCDC</color>
+ 	<color name="Crimson">#DC143C</color>
+    <color name="DarkOrchid">#9932CC</color>
+    <color name="Olive">#808000</color>
+ 	<color name="Purple">#800080</color>
+    <color name="Black">#000000</color>
+    
+    <color name="screen_background">#333</color>
+    <color name="display_background">#000</color>
+    
+    <!-- Sliding Panel Colors -->
+    <drawable name="white">#ffffff</drawable>
+    <drawable name="black">#000000</drawable>
+    <drawable name="green">#347C2C</drawable>
+    <drawable name="pink">#FF00FF</drawable>
+    <drawable name="violet">#a020f0</drawable>
+    <drawable name="grey">#778899</drawable>
+    <drawable name="red">#C11B17</drawable>
+    <drawable name="PowderBlue">#b0e0e6</drawable>
+    <drawable name="brown">#2F1700</drawable>
+    <drawable name="Hotpink">#7D2252</drawable>
+    <drawable name="darkgrey">#606060</drawable>
+    
+</resources>
